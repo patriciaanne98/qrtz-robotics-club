@@ -1,0 +1,92 @@
+/*  CSS Demo Stylesheet  */
+
+/* --------------- Box Sizing ----------------- */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* --------------- Utility Classes ----------------- */
+body { 
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header.primary {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+  /*T,R,B.L*/
+    padding: 10px 40px 10px 40px;
+}
+
+header.primary h1 {
+  color:#ffffff;
+  font-size: 2.4rem;
+  /* top | left and right | bottom */
+  margin: 20px 10px 30px; 
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header.primary h2 {
+  font-size: 1.3rem;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+nav.primary {
+}
+nav.primary ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+nav.primary ul li {
+  list-style-type: none;
+}
+nav.primary ul li a {
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 2px solid #c0c0c0;
+  padding: 5px 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+nav.primary ul li a:hover {
+  background-color:grey;
+}
+
+#content {
+}
+
+#content h2 {
+  font-size:2rem;
+  color: #000000;
+  text-align:center;
+  border-bottom: 1px dotted darkgrey;
+  margin: 100px 50px 50px 100px;
+}
+
+p {
+  font-size:1.2rem;
+  text-align:center;
+  margin: 60px 50px 50px 60px;
+}
