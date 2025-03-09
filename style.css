@@ -74,7 +74,11 @@ nav.primary ul li a:hover {
   background-color:grey;
 }
 
-#content {
+#content h1 {
+  font-size:2rem;
+  text-align: center;
+  margin:auto;
+  
 }
 
 #content h2 {
@@ -82,11 +86,193 @@ nav.primary ul li a:hover {
   color: #000000;
   text-align:center;
   border-bottom: 1px dotted darkgrey;
-  margin: 100px 50px 50px 100px;
+  margin:auto;
+  padding: 20px 0 20px 0;
 }
 
 p {
   font-size:1.2rem;
   text-align:center;
   margin: 60px 50px 50px 60px;
+}
+
+.container {
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 20px; /* Space inside the box */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 20px auto; /* Space around the container */
+  width: 80%;
+  max-width: 900px; /* Prevents it from stretching too much */
+
+  h2 {
+    color: black; /* Dark red for contrast */
+    border-bottom: 2px solid black; /* Underline effect */
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+.container img {
+  display: block;
+  width: 100%;
+  max-width: 600px; /* Prevents it from being too large */
+  height: auto;
+  margin: 15px auto; /* Centers the image */
+  border-radius: 10px; /* Optional: Soft corners */
+}
+
+ul {
+  text-align: center;
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  margin: 8px 0;
+  padding: 8px;
+  background: #fff;
+  border-left: 4px solid black; /* Accent color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* BLOG SECTION */
+#blog {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center; /* Centers the posts */
+  gap: 30px; /* Space between cards */
+  border-top: 1px solid #cccccc; /* Separates blog from main content */
+  padding-top: 40px;
+}
+
+/* INDIVIDUAL POST (CARD STYLE) */
+#blog article.post{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  padding:10px;
+  font-size:.8rem;
+  border-radius:4px;
+  transition:.4s;
+}
+
+/* HOVER EFFECT FOR CARDS */
+#blog article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More depth on hover */
+}
+
+/* IMAGE STYLING */
+#blog article.post img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+}
+
+/* FIGURE AND CAPTION STYLING */
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* STYLING FOR DATE AND POST META */
+time {
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* STYLING FOR ARTICLE TITLE */
+#blog article.post h2 a {
+  color: #3b638b;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+/* TITLE HOVER EFFECT */
+#blog article.post h2 a:hover {
+  color: darkred;
+}
+
+/* FOOTER META (POST AUTHOR) */
+.post-meta {
+  font-size: 0.7rem;
+  margin-top: 10px;
+  color: #666;
+}
+/* Center the form container */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers form elements horizontally */
+  justify-content: center;
+  max-width: 500px; /* Set a reasonable width */
+  margin: 0 auto; /* Centers the form on the page */
+  background: #f9f9f9; /* Light background for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+form label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center; /* Centers text labels */
+}
+
+/* Style input fields and textarea */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%; /* Make input fields take full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center; /* Center text inside input fields */
+}
+
+
+.form-container {
+  justify-content: center; /* Centers the form */
+  margin:0 30px 0;
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+  margin-top: 15px;
+  padding: 20px 20px;
+  font-size: 1rem;
+  background: maroon;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background: darkred;
+}
+
+
+/* MAKE CARDS STACK ON SMALL SCREENS */
+@media (max-width: 768px) {
+  #blog {
+      flex-direction: column; /* Stacks posts vertically */
+      align-items: center;
+  }
+
+  #blog article.post {
+      width: 90%; /* Makes cards full width on mobile */
+      max-width: 400px;
+  }
 }
