@@ -99,12 +99,26 @@ p {
   margin: 20px auto; /* Space around the container */
   width: 80%;
   max-width: 900px; /* Prevents it from stretching too much */
+}
 
-  h2 {
+#about-content h1 {
+  color: black; /* Dark red for contrast */
+    border-bottom: 2px solid black; /* Underline effect */
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+  #about-content h2 {
     color: black; /* Dark red for contrast */
     border-bottom: 2px solid black; /* Underline effect */
     padding-bottom: 5px;
     margin-top: 20px;
+}
+
+#about-content p {
+  font-size:1.2rem;
+  margin:auto;
+  padding: 20px 0;
+  text-align: left;
 }
 .container img {
   display: block;
@@ -115,13 +129,14 @@ p {
   border-radius: 10px; /* Optional: Soft corners */
 }
 
-ul {
+#about-content ul {
   text-align: center;
   list-style-type: none; /* Removes bullet points */
   padding: 0;
 }
 
-ul li {
+#about-content ul li {
+  list-style-type:none;
   font-size: 16px;
   margin: 8px 0;
   padding: 8px;
@@ -181,18 +196,15 @@ time {
 }
 
 /* STYLING FOR ARTICLE TITLE */
-#blog article.post h2 a {
-  color: #3b638b;
+
+#blog article.post h2 {
+text-align:center;
+  color: black;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
   margin-top: 10px;
   transition: color 0.3s ease;
-}
-
-/* TITLE HOVER EFFECT */
-#blog article.post h2 a:hover {
-  color: darkred;
 }
 
 /* FOOTER META (POST AUTHOR) */
@@ -201,6 +213,76 @@ time {
   margin-top: 10px;
   color: #666;
 }
+
+#events-content h2 {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 1px dotted black;
+  margin:auto;
+  padding: 20px;
+}
+
+#events-content h3 {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1rem;
+  margin:auto;
+  padding:40px 0;
+}
+
+#events-content ul{
+  padding: 20px 20px 0 20px;
+  margin:auto;
+}
+
+#events-content p {
+  font-size:1rem;
+margin:auto;
+padding: 20px 0;
+text-align: left;
+}
+
+#join-content h1 {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align:center;
+  font-size: 2rem;
+  border-bottom: 1px dotted black;
+  margin:auto;
+  padding: 20px;
+}
+
+#join-content h2 {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1.5rem;
+  border-bottom: 1px dotted black;
+  margin:auto;
+  padding: 20px;
+}
+
+#join-content ul {
+  list-style-type: circle;
+  text-align: left;
+  margin:auto;
+  padding: 20px 60px;
+}
+
+#join-content p {
+  font-size:1rem;
+margin:auto;
+padding:10px 40px;
+text-align: left;
+}
+
 /* Center the form container */
 form {
   display: flex;
@@ -258,6 +340,13 @@ form input[type="submit"]:hover {
   background: darkred;
 }
 
+footer {
+  margin:auto;
+padding:5px;
+  text-align:center;
+  color:black;
+  font-size:1.2rem;
+}
 
 /* MAKE CARDS STACK ON SMALL SCREENS */
 @media (max-width: 768px) {
